@@ -2,9 +2,9 @@
 class Config
 {
     // Настроек от проекта в личном кабинете https://merchant.freekassa.ru/settings
-    const MERCHANT_ID = '';
-    const SECRET_KEY_1 = '';
-    const SECRET_KEY_2 = '';
+    const MERCHANT_ID = '0ca81a4e75ad24ae6f0ea8bff57131cc';
+    const SECRET_KEY_1 = 'jNb23rtg!';
+    const SECRET_KEY_2 = 'jNb23rtg!';
 
     // Валюта платежа (RUB,USD,EUR,UAH,KZT)
     const CURRENCY = '';
@@ -13,11 +13,11 @@ class Config
     const ITEM_PRICE = 1;
 
     // Таблица начисления товара, например `users`
-    const TABLE_ACCOUNT = '';
+    const TABLE_ACCOUNT = 'accounts';
     // Название поля из таблицы начисления товара по которому производится поиск аккаунта/счета, например `email`
-    const TABLE_ACCOUNT_NAME = '';
+    const TABLE_ACCOUNT_NAME = 'NickName';
     // Название поля из таблицы начисления товара которое будет увеличено на количество оплаченного товара, например `sum`, `donate`
-    const TABLE_ACCOUNT_DONATE= '';
+    const TABLE_ACCOUNT_DONATE= 'DonateMoney';
 
     // Параметры соединения с бд
     // Хост
