@@ -21,11 +21,11 @@ class Config
 
     // Параметры соединения с бд
     // Хост
-    const DB_HOST = '';
+    const DB_HOST = 'localhost';
     // Имя пользователя
-    const DB_USER = '';
+    const DB_USER = 'user45085';
     // Пароль
-    const DB_PASS = '';
+    const DB_PASS = 'XESSAAI7EhSs';
     // Название базы
-    const DB_NAME = '';
+    const DB_NAME = 'user45085';
 }
