@@ -307,21 +307,26 @@ body.dark .search-field i{
         margin-top: 20px;
     }
 }
-
+.body_hide {
+	opacity: 0;
+	transition: .9s opacity ease-in-out;
+}
+.body_visible {
+	opacity: 1;
+}
 
 </style>
-<body>
+<body class="body_hide">
     <nav>
         <div class="nav-bar">
             <i class='bx bx-menu sidebarOpen' ></i>
-            <span class="logo navLogo"><a href="Main.html"><img src="img/ananaz.png" width="60">AnanazPlay</a></span>
+            <span class="logo navLogo"><a href="Main.html"><img src="img/LOGO1.png" width="300"></a></span>
 
             <div class="menu">
                 <div class="logo-toggle">
                     <span class="logo"><a href="Main.html">AnanazPlay</a></span>
                     <i class='bx bx-x siderbarClose'></i>
                 </div>
-
                 <ul class="nav-links">
                     <li><a href="donate.html">Донат</a></li>
                     <li><a href="news.html">Новости</a></li>
@@ -396,6 +401,10 @@ body.addEventListener("click" , e =>{
         nav.classList.remove("active");
     }
 });
+
+setTimeout(function(){
+	document.body.classList.add('body_visible');
+}, 200);
 
 </script>
 <!-- Дальше это для главной --></form>
